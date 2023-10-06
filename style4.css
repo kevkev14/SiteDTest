@@ -1,0 +1,86 @@
+:root {
+  --gray: #d3d3d3;
+  --black: #0e0f0f;
+  --brown: #caa971;
+  --yellow: #fcf3a6;
+  --sand: #fcfbeb;
+  --white: #fff;
+  --font: "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  margin: 40px;
+  font-family: var(--font);
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--white);
+}
+
+.box {
+  background-color: var(--gray);
+
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 150%;
+}
+.flexbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+img {
+  width: 80px;
+  margin-right: 8px;
+  border-radius: 50%;
+  display: block;
+}
+.name {
+  font-weight: bolder;
+}
+.info {
+  font-size: 13px;
+  margin-top: -10%;
+}
+
+.firsttext {
+  font-size: 80%;
+  font-weight: lighter;
+}
+.lasttext {
+  font-size: 80%;
+  font-weight: lighter;
+  opacity: 70%;
+}
+.tiffany {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.tyler {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: var(--yellow);
+}
+.stephanie {
+  grid-column: 4;
+  grid-row: 1 / 3;
+  background-color: var(--sand);
+}
+.tiffanyL {
+  grid-column: 1;
+  grid-row: 2;
+}
+.george {
+  grid-column: 2/4;
+  grid-row: 2;
+  background-color: var(--yellow);
+}
+@media (max-width: 640px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
